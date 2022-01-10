@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <nav></nav>
+    <div class="formPopup">
+      <form class="formContainer">
+        <h3>Add new task</h3>
+        <!--title, description, dueDate, priority-->
+        <label for="title">
+          <strong>Title</strong>
+        </label>
+        <input
+          type="text"
+          id="title"
+          placeholder="Title"
+          name="title"
+          required
+        />
+        <label for="description">
+          <strong>Description</strong>
+        </label>
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          name="description"
+          required
+        />
+        <label for="dueDate">
+          <strong>Due Date</strong>
+        </label>
+        <input
+          type="text"
+          id="dueDate"
+          placeholder="Due Date"
+          name="dueDate"
+          required
+        />
+        <label for="priority">
+          <strong>Priority</strong>
+        </label>
+        <input
+          type="text"
+          id="priority"
+          placeholder="Priority"
+          name="priority"
+          required
+        />
+        <button type="submit" id="submit">Submit</button>
+        <button type="button" id="closeForm">Close form</button>
+      </form>
+    </div>
+    <div class="sidebar">
+      <button class="newProjectBtn">+</button>
+      <strong>Projects</strong>
+      <div class="anchorList"></div>
+    </div>
+    <div class="main">
+      <div class="todoContainer"></div>
+    </div>
+    <button class="newTodoBtn">+</button>
+  </body>
+</html>

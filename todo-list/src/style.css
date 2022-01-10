@@ -1,0 +1,57 @@
+body {
+  background-color: blueviolet;
+}
+
+.sidebar {
+  background-color: white;
+  height: 100%;
+  position: fixed;
+  width: 15vw;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  margin-left: 22px;
+  /* Long link names will overflow into main */
+}
+
+.sidebar a:hover {
+  color: grey;
+}
+
+.main {
+  background-color: white;
+  margin-left: 28vw;
+  margin-top: 20vh;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  width: 60%;
+  height: 50%;
+}
+
+.formPopup {
+  display: none;
+  margin-left: 30%;
+}
+
+.formContainer {
+  background-color: white;
+  margin-top: 5vh;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  width: 60%;
+}
+
+.newTodoBtn {
+  margin-left: 28vw;
+}
+
+#closeForm {
+  margin: 5px;
+}
